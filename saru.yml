@@ -1,11 +1,9 @@
 ---
 - hosts: all
   become: true
-  tasks: 
-    apt:
-      - name: 
-          - git
-          - maven
-          - unzip
-        state: present
-      
+  tasks:
+   - name: install soft
+     apt:
+       name: ['httpd', 'wget', 'unzip', 'maven']
+       state: latest
+
