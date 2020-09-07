@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  tasks: 
+    apt:
+      - name: 
+          - git
+          - maven
+          - unzip
+        state: present
+      
