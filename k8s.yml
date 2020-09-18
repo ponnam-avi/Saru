@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: gamutkart-container
-          image: avsd7/gamutkart27
+          image: avsd7/saranfile
           ports:
           - containerPort: 8080
           command: ["/bin/sh"]
